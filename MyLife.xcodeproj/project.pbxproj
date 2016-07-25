@@ -12,9 +12,9 @@
 		8395334D1D4614F10014DAB1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8395334B1D4614F10014DAB1 /* LaunchScreen.storyboard */; };
 		839533581D4614F10014DAB1 /* MyLifeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 839533571D4614F10014DAB1 /* MyLifeTests.m */; };
 		839533631D4614F10014DAB1 /* MyLifeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 839533621D4614F10014DAB1 /* MyLifeUITests.m */; };
-		83DA4DA11D46156C002FDDF5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 83DA4D9C1D46156C002FDDF5 /* AppDelegate.m */; };
-		83DA4DA21D46156C002FDDF5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83DA4D9E1D46156C002FDDF5 /* ViewController.m */; };
 		83DA4DA31D46156C002FDDF5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 83DA4DA01D46156C002FDDF5 /* main.m */; };
+		83DA4DB01D462497002FDDF5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 83DA4DAD1D462497002FDDF5 /* AppDelegate.m */; };
+		83DA4DB11D462497002FDDF5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83DA4DAF1D462497002FDDF5 /* ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,11 +46,11 @@
 		8395335E1D4614F10014DAB1 /* MyLifeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyLifeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		839533621D4614F10014DAB1 /* MyLifeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyLifeUITests.m; sourceTree = "<group>"; };
 		839533641D4614F10014DAB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		83DA4D9B1D46156C002FDDF5 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		83DA4D9C1D46156C002FDDF5 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		83DA4D9D1D46156C002FDDF5 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		83DA4D9E1D46156C002FDDF5 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		83DA4DA01D46156C002FDDF5 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		83DA4DAC1D462497002FDDF5 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		83DA4DAD1D462497002FDDF5 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		83DA4DAE1D462497002FDDF5 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		83DA4DAF1D462497002FDDF5 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,10 +132,9 @@
 		83DA4D9A1D46156C002FDDF5 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				83DA4D9B1D46156C002FDDF5 /* AppDelegate.h */,
-				83DA4D9C1D46156C002FDDF5 /* AppDelegate.m */,
-				83DA4D9D1D46156C002FDDF5 /* ViewController.h */,
-				83DA4D9E1D46156C002FDDF5 /* ViewController.m */,
+				83DA4DA41D462497002FDDF5 /* model */,
+				83DA4DA51D462497002FDDF5 /* modules */,
+				83DA4DAB1D462497002FDDF5 /* root */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -146,6 +145,71 @@
 				83DA4DA01D46156C002FDDF5 /* main.m */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		83DA4DA41D462497002FDDF5 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		83DA4DA51D462497002FDDF5 /* modules */ = {
+			isa = PBXGroup;
+			children = (
+				83DA4DA61D462497002FDDF5 /* camera */,
+				83DA4DA71D462497002FDDF5 /* friends */,
+				83DA4DA81D462497002FDDF5 /* home */,
+				83DA4DA91D462497002FDDF5 /* me */,
+				83DA4DAA1D462497002FDDF5 /* square */,
+			);
+			path = modules;
+			sourceTree = "<group>";
+		};
+		83DA4DA61D462497002FDDF5 /* camera */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = camera;
+			sourceTree = "<group>";
+		};
+		83DA4DA71D462497002FDDF5 /* friends */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = friends;
+			sourceTree = "<group>";
+		};
+		83DA4DA81D462497002FDDF5 /* home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = home;
+			sourceTree = "<group>";
+		};
+		83DA4DA91D462497002FDDF5 /* me */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = me;
+			sourceTree = "<group>";
+		};
+		83DA4DAA1D462497002FDDF5 /* square */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = square;
+			sourceTree = "<group>";
+		};
+		83DA4DAB1D462497002FDDF5 /* root */ = {
+			isa = PBXGroup;
+			children = (
+				83DA4DAC1D462497002FDDF5 /* AppDelegate.h */,
+				83DA4DAD1D462497002FDDF5 /* AppDelegate.m */,
+				83DA4DAE1D462497002FDDF5 /* ViewController.h */,
+				83DA4DAF1D462497002FDDF5 /* ViewController.m */,
+			);
+			path = root;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,9 +342,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83DA4DA21D46156C002FDDF5 /* ViewController.m in Sources */,
+				83DA4DB11D462497002FDDF5 /* ViewController.m in Sources */,
+				83DA4DB01D462497002FDDF5 /* AppDelegate.m in Sources */,
 				83DA4DA31D46156C002FDDF5 /* main.m in Sources */,
-				83DA4DA11D46156C002FDDF5 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
